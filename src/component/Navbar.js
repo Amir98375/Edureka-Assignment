@@ -22,10 +22,10 @@ export const Navbar = () => {
                     <a href='#'>about</a>
                 </li>
                 <li>
-                    <a href='#'>service</a>
+                    <a href='#'>SignUp</a>
                 </li>
                 <li>
-                    <a href='#'>company</a>
+                    <a href='#'>SignIn</a>
                 </li>
             </ul>
             <div className="hamburger-menu">
@@ -39,9 +39,7 @@ export const Navbar = () => {
     
 
   </nav>
-  <section>
-    welcome to edureka
-  </section>
+
    </>
   )
 }

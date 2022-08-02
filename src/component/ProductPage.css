@@ -1,0 +1,64 @@
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 
+    0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: aliceblue;
+   justify-content: space-around;
+}
+.likeicon{
+    color: blue;
+    font-size: 30px;
+}
+.heading{
+    margin-top: 10px;
+    color: grey;
+}
+.containit{
+    color: grey;
+    font-size: 13px;
+    margin-right: 20px;
+}
+.first{
+    background-color: white;
+    width: 600px; 
+  display: block;
+ 
+}
+.likes{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 
+    0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.video{
+    margin-top: 30px;  
+    margin-left: 10%;
+
+}
+.second{
+    background-color: white;
+    width: 600px; 
+  display: block;
+   
+}
+.button{
+    width: 70%;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    height: 50px;
+
+}
+.arrow{
+
+   font-size: large;
+   margin-top: 5px;
+}
+
+@media (max-width:800px){
+    .container{
+        grid-template-columns: auto;
+    }
+}
