@@ -99,5 +99,32 @@
         "subject":"configure management with puppeteer",
         "topic":2,
         "assignment":4
-    }]
+    }],
+    "course":[
+        {
+           "date":"OCT 12th" ,
+           "week":"sat & sun 5 weeks",
+           "time":"8:30Pm to 11:30 PM (IST)"
+        },
+        {
+            "date":"NOV 14th" ,
+            "week":"sat & sun 5 weeks",
+            "time":"8:30Pm to 11:30 PM (IST)"
+         },
+         {
+            "date":"DEC 5th" ,
+            "week":"sat & sun 5 weeks",
+            "time":"8:30Pm to 11:30 PM (IST)"
+         },
+         {
+            "date":"AUG 25th" ,
+            "week":"sat & sun 5 weeks",
+            "time":"8:30Pm to 11:30 PM (IST)"
+         },
+         {
+            "date":"MAR 25th" ,
+            "week":"sat & sun 5 weeks",
+            "time":"8:30Pm to 11:30 PM (IST)"
+         }
+    ]
 }

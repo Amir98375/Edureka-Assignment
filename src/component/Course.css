@@ -45,6 +45,16 @@
   display: block;
    
 }
+.course-choose{
+   height: 19%;
+   display: flex;
+
+    gap: 10px;
+    justify-content: space-around;
+    justify-items: center;
+    padding-top: 1.5em;
+
+}
 .button-course{
     width: 90%;
     background-color:coral;

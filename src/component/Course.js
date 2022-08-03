@@ -1,24 +1,48 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Course.css'
 import {BsFillCalendar3WeekFill} from 'react-icons/bs'
 import {BiTimeFive,BiLike} from 'react-icons/bi'
 import {FaFreeCodeCamp,FaRupeeSign,FaCcVisa,FaCcMastercard} from 'react-icons/fa'
 import{FcRating} from 'react-icons/fc'
 import {AiOutlineArrowRight,AiFillUnlock} from 'react-icons/ai'
-import { Heading,Text ,Box} from '@chakra-ui/react'
+import { Heading,Text ,Box,Radio,Checkbox} from '@chakra-ui/react'
+import axios from 'axios'
 
 export const Course = () => {
+  const [data,setdata]=useState([])
+  const getData=()=>{
+    axios.get(`http://localhost:8080/course`)
+    .then((res)=>setdata(res.data))
+  }
+  useEffect(()=>{
+    getData()
+  },[])
+  console.log(data,)
+
   return (
     <>
          <div className='container-course'>
-            <div className='first-course'>
-            <h2 className='heading-course'>Big Data Hadoop certification training</h2>
-            <video className='video-course' width="70%" height="340" controls>
-<source src='' type='mp4'></source>
-            </video>
-           <div className='likes-course'><p className='likeicon-course'><BiLike className='likeicon'/>160k+</p> 
-           <p><FcRating/>rating</p>
-           <p>read reviews</p></div>
+         <div className='first-course'>
+{
+  data?.map((el)=>
+  <div className='course-choose'>
+  <Checkbox mb={"22px"}></Checkbox>
+   <Text>{el.date}</Text>
+   <Text>{el.week}</Text>
+   <Text>{el.time}</Text>
+   <hr></hr>
+  </div>
+  )
+ 
+}
+{/* <div className='course-choose'>1</div>
+<hr></hr>
+<div className='course-choose'>1</div>
+<hr></hr>
+<div className='course-choose'>1</div>
+<div className='course-choose'>1</div> */}
+          
+          
             </div>
             <div className='second-course'>
         <Box mt={"30px"}  display={"flex"} justifyContent={"space-around"} justifyItems={"center"}>
