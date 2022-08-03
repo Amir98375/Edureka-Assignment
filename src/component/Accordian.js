@@ -41,7 +41,7 @@ export const Accordian = () => {
     }
   
   return (
-   <Box bg={"#c2e1f2"} margin={"center"}>
+   <Box bg={"#c2e1f2"} mt={"30px"}>
     <Text ml={"39em"} mt={"20px"}>Big data handoop curriculam</Text>
     <Heading  ml={'30rem'} mt={"20px"} >curriculam designed by expert</Heading>
    {data.map((el)=> <Accordion width={"80%"}  ml={"10%"} bg={"white"} >

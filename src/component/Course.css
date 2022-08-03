@@ -1,4 +1,4 @@
-.container{
+.container-course{
     display: grid;
     grid-template-columns: auto auto;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 
@@ -7,26 +7,26 @@
    justify-content: space-around;
    margin-top: 30px;
 }
-.likeicon{
+.likeicon-course{
     color: blue;
     font-size: 30px;
 }
-.heading{
+.heading-course{
     margin-top: 10px;
     color: grey;
 }
-.containit{
+.containit-course{
     color: grey;
     font-size: 13px;
     margin-right: 20px;
 }
-.first{
+.first-course{
     background-color: white;
-    width: 600px; 
+    width: 800px; 
   display: block;
  
 }
-.likes{
+.likes-course{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 
     0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     display: flex;
@@ -34,33 +34,34 @@
     align-items: center;
     margin-top: 50px;
 }
-.video{
+.video-course{
     margin-top: 30px;  
     margin-left: 10%;
 
 }
-.second{
+.second-course{
     background-color: white;
-    width: 600px; 
+    width: 400px; 
   display: block;
    
 }
-.button{
-    width: 70%;
-    background-color: blue;
+.button-course{
+    width: 90%;
+    background-color:coral;
     color: white;
     border-radius: 5px;
     height: 50px;
+    margin-left: 5%;
 
 }
-.arrow{
+.arrow-course{
 
    font-size: large;
    margin-top: 5px;
 }
 
 @media (max-width:800px){
-    .container{
+    .container-course{
         grid-template-columns: auto;
     }
 }

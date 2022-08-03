@@ -11,15 +11,15 @@ export const ProductPage = () => {
          <div className='container'>
             <div className='first'>
             <h2 className='heading'>Big Data Hadoop certification training</h2>
-            <video className='video' width="70%" height="240" controls>
-<source src='https://www.youtube.com/watch?v=mu0qTVIkkAs' type='mp4'></source>
+            <video className='video' width="70%" height="340" controls>
+<source src='' type='mp4'></source>
             </video>
            <div className='likes'><p className='likeicon'><BiLike className='likeicon'/>160k+</p> 
            <p><FcRating/>rating</p>
            <p>read reviews</p></div>
             </div>
             <div className='second'>
-          <h3>lorem ipsum text</h3>
+          <h1>lorem ipsum text</h1>
            <p>What is Lorem Ipsum?
 
    remaining essentially unchanged. It was popularised in the 1960s with the 
