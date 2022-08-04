@@ -19,25 +19,35 @@ export const Accordian = () => {
     const [lastpage,setlastpage]=useState(0)
     const [toggle,settoggle]=useState(false)
     const [data,setdata]=useState([])
-    const getData=(page)=>{
-        let limit=5
+    const [limit,setlimit]=useState(5)
+    const getData=(limit)=>{
+       console.log("limit",limit)
        axios.get(`http://localhost:8080/user`,{
              params:{
-                _page:page,
+                
                 _limit:limit
              }
        }) 
        .then((res)=>setdata(res.data))
     }
     useEffect(()=>{
-        getData(page)
+        getData(limit)
         if(data){
             setlastpage(Math.ceil(data.length/5))
         }
-    },[page])
+    },[limit])
     console.log(data)
     const handlepage=()=>{
+       if(page>=1){
         setpage(page+1)
+        setlimit(limit+5)
+       }
+    }
+    const showless=()=>{
+            if(page>1){
+              setpage(page-1)
+              setlimit(limit-5)
+            }
     }
   
   return (
@@ -102,7 +112,8 @@ export const Accordian = () => {
 
  
 </Accordion>)}
-<Button ml={"42em"} mt={"20px"} onClick={handlepage} disabled={page==lastpage}>Show more</Button>
+<Button ml={"38em"} mt={"20px"} onClick={handlepage} disabled={page==lastpage}>Show more</Button>
+{page>1?<Button onClick={showless} mt={"20px"}>show less</Button>:null}
   </Box>
   )
 }
